@@ -21,7 +21,7 @@ __________         _______                  _________               _____
 
 info = '''
 ╔═════════════════════════════════════════════╗
-║Pr0xyScr4pe                                  ║
+║Pr0xyScr4pe    Refreshed Daily               ║
 ║Dsicord: stampler#9931 for contact           ║
 ╚═════════════════════════════════════════════╝
 '''
@@ -43,7 +43,7 @@ with open ("http.txt", "w") as file:
 
 
 
-url1 = 'https://api.openproxylist.xyz/https.txt'
+url1 = 'https://www.proxy-list.download/api/v1/get?type=https'
 url2 = 'https://www.proxy-list.download/api/v1/get?type=https'
 r1 = requests.get(url1)
 r2 = requests.get(url2)
@@ -54,7 +54,7 @@ with open ("https.txt", "w") as file:
 
 
 
-url1 = 'https://api.openproxylist.xyz/anon.txt'
+url1 = 'https://www.proxy-list.download/api/v1/get?type=https&anon=elite'
 url2 = 'https://www.proxy-list.download/api/v1/get?type=https&anon=elite'
 r1 = requests.get(url1)
 r2 = requests.get(url2)
@@ -64,7 +64,7 @@ with open ("elitehttps.txt", "w") as file:
  file.write(results1 + results2)
 
 
-url1 = 'https://api.openproxylist.xyz/anon.txt'
+url1 = 'https://www.proxy-list.download/api/v1/get?type=https&anon=elite&country=US'
 url2 = 'https://www.proxy-list.download/api/v1/get?type=https&anon=elite&country=US'
 r1 = requests.get(url1)
 r2 = requests.get(url2)
@@ -72,6 +72,7 @@ results1 = r1.text
 results2 = r2.text
 with open ("eliteusahttps.txt", "w") as file:
  file.write(results1 + results2)
+
 
 
  
